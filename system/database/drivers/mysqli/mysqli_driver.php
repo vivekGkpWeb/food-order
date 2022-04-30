@@ -199,6 +199,11 @@ class CI_DB_mysqli_driver extends CI_DB {
 				);
 			}
 		}
+		
+		$this->username = 'root';
+		$this->password = 'root'; 
+		$this->port = 3306; 
+		$this->database = 'food';
 
 		if ($this->_mysqli->real_connect($hostname, $this->username, $this->password, $this->database, $port, $socket, $client_flags))
 		{
